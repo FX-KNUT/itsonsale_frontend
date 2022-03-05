@@ -16,6 +16,11 @@
 
 ### Demo
 
+> - ![image](https://user-images.githubusercontent.com/57670160/156887939-08ef6052-51d3-46ee-ae51-9fb6d26dedac.png)
+
+> - 할인 상품은 cu의 디자인을 사용하면 좋을 것 같음(cu가 제일 잘 만든듯)
+>   > ![image](https://user-images.githubusercontent.com/57670160/156888045-17659a11-d7f5-452d-92fa-75162116fb25.png)
+
 ### Notice
 
 - 1.
