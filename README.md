@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# It's on Sale
 
-## Getting Started
+> 편의점 할인 행사 상품을 보여주는 페이지
 
-First, run the development server:
+### Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- TS, React, NextJS, SCSS, Axios
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Functions
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- 1. Infinite Scroll로 할인 상품 보여주기
+- 2. 검색 form으로 원하는 상품 보여주기
+- 3. Nav의 Brand Badge를 눌러 해당 Brand 상품들 보여주기
+- 4. Desktop, Tablet, Mobile에 맞는 화면 구현하기
+- 5. 한 화면으로 구현하기 (Section에만 Scroll 부여)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Demo
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Notice
 
-## Learn More
+- 1.
 
-To learn more about Next.js, take a look at the following resources:
+### Idea
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 1.
