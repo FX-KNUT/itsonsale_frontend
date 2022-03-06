@@ -13,6 +13,16 @@ export const MAIN_CONTENTS = [Sidebar, Section];
 export const SIDEBAR_CONTENTS = [Badges, SearchForm];
 
 /* Badge Brand */
-export const BADGE_BRANDS = ["CU", "GS25", "7Eleven", "MINISTOP", "EMART"];
+interface BADGEPROPS {
+  brand: string;
+  key: string;
+}
+export const BADGE_BRANDS: BADGEPROPS[] = [
+  { brand: "CU", key: "cu" },
+  { brand: "GS25", key: "gs25" },
+  { brand: "7Eleven", key: "seven" },
+  { brand: "MINISTOP", key: "ministop" },
+  { brand: "EMART", key: "emart" },
+];
 
 // section

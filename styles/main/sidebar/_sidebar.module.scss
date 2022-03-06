@@ -1,3 +1,7 @@
+@import "../../varibale.module.scss";
+
 .sidebarWrapper {
-  border: 1px dashed black;
+  padding: 0 $gutter__x;
+  border-right: 1px solid $border__sidebar;
+  background-color: $bg__sidebar;
 }

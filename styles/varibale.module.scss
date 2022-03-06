@@ -2,12 +2,20 @@
 $gutter__x: 2rem;
 $gutter__y: 1rem;
 
+// badge
+$badge__margin: 4px;
+$badge__padding: 0.5rem;
+
 /* color */
 
 // header
 $color__header: hsl(0, 0%, 100%);
 $color__header__hover: hsla(0, 0%, 100%, 0.7);
 $bg__header: hsl(213, 13%, 16%);
+
+// sidebar
+$bg__sidebar: hsl(0, 0%, 100%);
+$border__sidebar: hsl(207, 16%, 87%);
 
 // badges
 $color__cu: hsl(77, 65%, 48%);
@@ -22,4 +30,17 @@ $bg__mini: hsl(45, 99%, 52%);
 $bg__emart: hsl(240, 3%, 37%);
 $text_shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
+// section
+$bg__section: hsl(204, 33%, 97%);
+
 /* breakpoint */
+
+/* border */
+
+// badge_border
+$badge_border_radius: 30px;
+
+/* font */
+
+// badge
+$badge__font_size: 0.875rem;

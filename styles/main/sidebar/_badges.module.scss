@@ -1,3 +1,7 @@
+@import "../../varibale.module.scss";
+
 .badgesWrapper {
-  border: 1px dashed black;
+  margin: $gutter__y 0;
+  display: flex;
+  flex-wrap: wrap;
 }

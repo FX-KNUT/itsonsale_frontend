@@ -1,3 +1,6 @@
+@import "../../varibale.module.scss";
+
 .searchFormWrapper {
+  margin-bottom: $gutter__y;
   border: 1px dashed black;
 }
