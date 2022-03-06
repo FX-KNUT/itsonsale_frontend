@@ -21,6 +21,8 @@
 > - 할인 상품은 cu의 디자인을 사용하면 좋을 것 같음(cu가 제일 잘 만든듯, 출처: http://cu.bgfretail.com/event/plus.do?category=event&depth2=1&sf=N)
 >   > <img width="245" alt="image" src="https://user-images.githubusercontent.com/57670160/156888098-114f3c88-aee2-4d6a-ba56-dd61b76c73f7.png">
 
+> - <img width="1440" alt="image" src="https://user-images.githubusercontent.com/57670160/156918906-d7b281bd-1192-4645-8752-ec934f633db9.png">
+
 ### Notice
 
 - 1.
