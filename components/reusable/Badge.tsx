@@ -9,13 +9,13 @@ interface Props {
 
 const Badge = ({ brand, cn }: Props) => {
   return (
-    <div className={`${styles.brandbadge} ${styles[cn]}`}>
-      <Link href={`/brands/${cn}`}>
-        <a>
+    <Link href={`/brands/${cn}`}>
+      <a>
+        <div className={`${styles.brandbadge} ${styles[cn]}`}>
           <span>{brand}</span>
-        </a>
-      </Link>
-    </div>
+        </div>
+      </a>
+    </Link>
   );
 };
 

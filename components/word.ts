@@ -4,8 +4,6 @@ import SearchForm from "./main/sidebar/SearchForm";
 // header
 export const LOGO = `It's on Sale!`;
 
-// main
-
 // sidebar
 export const SIDEBAR_CONTENTS = [Badges, SearchForm];
 
