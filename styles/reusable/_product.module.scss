@@ -1,0 +1,93 @@
+@import "../varibale.module.scss";
+
+.productWrapper {
+  width: 224px;
+  border: 1px solid $product_border_color;
+  border-radius: 16px;
+  padding: $gutter__card;
+  position: relative;
+  background-color: $bg__product;
+
+  .productHeader {
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+
+    .brand {
+      border-radius: $product_border_radius;
+      color: $color__event;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.cu {
+        background-color: $bg__cu;
+      }
+
+      &.gs {
+        background-color: $bg__gs;
+      }
+
+      &.seven {
+        background-color: $bg__seven;
+      }
+
+      &.mini {
+        background-color: $bg__mini;
+      }
+
+      &.emart {
+        background-color: $bg__mini;
+      }
+    }
+
+    .event {
+      border-radius: $product_border_radius;
+      color: $color__event;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 8px;
+
+      &.event_opo {
+        background-color: $bg__event__opo;
+      }
+
+      &.event_tpo {
+        background-color: $bg__event__tpo;
+      }
+    }
+  }
+
+  .productContent {
+    display: flex;
+    flex-direction: column;
+
+    .introduceWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.125rem;
+
+      .name {
+        width: 100%;
+        font-weight: 500;
+        margin-bottom: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .price {
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

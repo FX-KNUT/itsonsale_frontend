@@ -1,6 +1,7 @@
 /* padding & margin */
 $gutter__x: 2rem;
 $gutter__y: 1rem;
+$gutter__card: 1rem;
 
 // badge
 $badge__margin: 4px;
@@ -33,12 +34,22 @@ $text_shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 // section
 $bg__section: hsl(204, 33%, 97%);
 
+// product
+$color__event: hsl(0, 0%, 100%);
+$bg__product: hsl(0, 0%, 100%);
+$bg__event__opo: hsl(125, 63%, 52%);
+$bg__event__tpo: hsl(256, 78%, 63%);
+
 /* breakpoint */
 
 /* border */
 
 // badge_border
 $badge_border_radius: 30px;
+
+// product_border
+$product_border_radius: 30px;
+$product_border_color: hsl(0, 0%, 93%);
 
 /* font */
 

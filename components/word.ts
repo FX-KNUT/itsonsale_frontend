@@ -20,4 +20,7 @@ export const BADGE_BRANDS: BADGEPROPS[] = [
   { brand: "EMART", key: "emart" },
 ];
 
-// section
+/* Section */
+
+// product
+export const WON = "원";
