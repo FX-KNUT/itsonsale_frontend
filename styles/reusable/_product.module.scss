@@ -9,8 +9,10 @@
   background-color: $bg__product;
 
   .productHeader {
-    width: 80%;
     position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
     z-index: 1;
     display: flex;
     justify-content: space-between;

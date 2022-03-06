@@ -1,7 +1,6 @@
-@import "../../varibale.module.scss";
-
 .productListWrapper {
-  flex: 1;
-  background-color: $bg__section;
-  padding: $gutter__y $gutter__x;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 12px;
 }
