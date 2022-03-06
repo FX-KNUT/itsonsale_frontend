@@ -15,10 +15,10 @@ const FetchMore = ({ loading, setPage }: Props) => {
       }
     );
     fetchMoreObserver.observe(fetchMoreTrigger.current!);
-    return () => {
+    /*  return () => {
       fetchMoreObserver.unobserve(fetchMoreTrigger.current!);
-    };
-  }, []);
+    }; */
+  }, [setPage]);
 
   return <div id="fetchMore" ref={fetchMoreTrigger}></div>;
 };
