@@ -1,6 +1,15 @@
-// padding & margin
+/* padding & margin */
+$gutter__x: 2rem;
+$gutter__y: 1rem;
 
-// color
+/* color */
+
+// header
+$color__header: hsl(0, 0%, 100%);
+$color__header__hover: hsla(0, 0%, 100%, 0.7);
+$bg__header: hsl(213, 13%, 16%);
+
+// badges
 $color__cu: hsl(77, 65%, 48%);
 $color__gs: hsl(21, 97%, 54%);
 $color__seven: hsl(357, 68%, 55%);
@@ -13,4 +22,4 @@ $bg__mini: hsl(45, 99%, 52%);
 $bg__emart: hsl(240, 3%, 37%);
 $text_shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
-// breakpoint
+/* breakpoint */

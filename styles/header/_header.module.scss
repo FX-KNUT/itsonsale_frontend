@@ -1,0 +1,21 @@
+@import "../varibale.module.scss";
+
+.headerWrapper {
+  background-color: $bg__header;
+  color: $color__header;
+
+  .logoWrapper {
+    margin: 0 $gutter__x;
+    display: flex;
+    align-items: center;
+
+    h3 {
+      margin: $gutter__y;
+      cursor: pointer;
+
+      &:hover {
+        color: $color__header__hover;
+      }
+    }
+  }
+}
