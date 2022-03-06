@@ -1,0 +1,8 @@
+@import "../../varibale.module.scss";
+
+.sectionWrapper {
+  flex: 1;
+  background-color: $bg__section;
+  padding: 0 $gutter__x;
+  margin: $gutter__y 0;
+}

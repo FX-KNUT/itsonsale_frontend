@@ -1,16 +1,8 @@
 import type { NextPage } from "next";
-import { Fragment } from "react";
-import styles from "../styles/Home.module.scss";
-import { MAIN_CONTENTS } from "../components/word";
+import Section from "../components/main/section/Section";
 
 const Home: NextPage = () => {
-  return (
-    <main className={styles.main}>
-      {MAIN_CONTENTS.map((content, idx) => (
-        <Fragment key={idx}>{content()}</Fragment>
-      ))}
-    </main>
-  );
+  return <Section />;
 };
 
 export default Home;

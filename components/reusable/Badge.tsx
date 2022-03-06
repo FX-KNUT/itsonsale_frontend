@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "../../styles/reusable/_badge.module.scss";
 
@@ -9,7 +10,11 @@ interface Props {
 const Badge = ({ brand, cn }: Props) => {
   return (
     <div className={`${styles.brandbadge} ${styles[cn]}`}>
-      <span>{brand}</span>
+      <Link href={`/brands/${cn}`}>
+        <a>
+          <span>{brand}</span>
+        </a>
+      </Link>
     </div>
   );
 };
