@@ -1,10 +1,11 @@
+// 이 파일은 components에서 사용할 단어들이나 다른 컴포넌트들을 선언하고 import해서 쓸 수 있게 만든 파일입니다.
 import Badges from "./main/sidebar/Badges";
 import SearchForm from "./main/sidebar/SearchForm";
 
-// header
+/* header에서 사용할 단어 */
 export const LOGO = `It's on Sale!`;
 
-// sidebar
+/* sidebar에서 사용할 단어 */
 export const SIDEBAR_CONTENTS = [Badges, SearchForm];
 
 /* Badge Brand */
@@ -22,5 +23,5 @@ export const BADGE_BRANDS: BADGEPROPS[] = [
 
 /* Section */
 
-// product
+/* product */
 export const WON = "원";

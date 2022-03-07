@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../../styles/reusable/_product.module.scss";
 import { WON } from "../word";
 
+// Props는 Product에 들어갈 props에 대한 자료형을 나타냅니다.
 interface Props {
   brand: string;
   event: string;
@@ -12,6 +13,8 @@ interface Props {
 }
 
 const Product = ({ brand, event, img, name, price }: Props) => {
+  // cn(className)
+  // cn으로 css를 조절합니다
   const event_cn = event === "1+1" ? "event_opo" : "event_tpo";
   let brand_cn: string = "";
   switch (brand) {

@@ -10,6 +10,7 @@ interface ListProps {
 
 const fetch = (page: number) => {
   let list: ListProps[] = [];
+  // 20개만 뽑아냄(추후 변경 가능)
   for (let i = 0; i < 20; i++) {
     list.push({
       brand: "CU",

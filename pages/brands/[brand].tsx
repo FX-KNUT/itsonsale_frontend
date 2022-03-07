@@ -13,6 +13,7 @@ interface ListProps {
   price: number;
 }
 
+// BrandBadge를 눌렀을 때 이 부분이 실행됨.
 const BrandProductList = () => {
   const [page, setPage] = useState<number>(0);
   const [list, setList] = useState<ListProps[]>([]);

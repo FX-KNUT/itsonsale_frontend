@@ -7,6 +7,7 @@ interface Props {
   cn: string;
 }
 
+// Sidebar에 있는 Brand, 누르면 페이지 이동
 const Badge = ({ brand, cn }: Props) => {
   return (
     <Link href={`/brands/${cn}`}>

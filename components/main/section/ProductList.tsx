@@ -10,6 +10,7 @@ interface ListProps {
   price: number;
 }
 
+// list를 받아서 Product형태로 보여줌
 const ProductList = ({ list }: any) => {
   return (
     <div className={styles.productListWrapper}>

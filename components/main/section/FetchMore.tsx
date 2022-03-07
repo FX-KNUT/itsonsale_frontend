@@ -6,6 +6,7 @@ interface Props {
 }
 
 const FetchMore = ({ loading, setPage }: Props) => {
+  // useRef는 document.querySelector라고 보면 됨.
   const fetchMoreTrigger = useRef(null);
 
   useEffect(() => {
