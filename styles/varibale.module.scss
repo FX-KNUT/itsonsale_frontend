@@ -40,7 +40,17 @@ $bg__product: hsl(0, 0%, 100%);
 $bg__event__opo: hsl(125, 63%, 52%);
 $bg__event__tpo: hsl(256, 78%, 63%);
 
+// reusable
+$bg__dim: hsla(0, 0%, 0%, 0.6);
+
+$color_slide_close_btn: rgba(0, 0, 0, 0.5);
+$hover_slide_close_btn: hsl(0, 100%, 50%);
+
 /* breakpoint */
+$breakpoint__mobile_max: 600px;
+$breakpoint__tablet_min: 601px;
+$breakpoint__tablet_max: 1181px;
+$breakpoint__desktop_min: 1182px;
 
 /* border */
 

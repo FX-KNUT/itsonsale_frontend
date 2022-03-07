@@ -14,6 +14,12 @@
 - 4. Desktop, Tablet, Mobile에 맞는 화면 구현하기
 - 5. 한 화면으로 구현하기 (Section에만 Scroll 부여)
 
+### Device
+
+- 1. Desktop ⭐️
+- 2. Tablet
+- 3. Mobile
+
 ### Demo
 
 > - ![IMG_A93320485E8B-1](https://user-images.githubusercontent.com/57670160/156888140-6933ad3f-e2e7-4c47-a379-653f94507452.jpeg)

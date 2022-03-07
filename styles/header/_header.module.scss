@@ -1,11 +1,14 @@
 @import "../varibale.module.scss";
+@import "../mixin.module.scss";
 
 .headerWrapper {
   background-color: $bg__header;
   color: $color__header;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $gutter__x;
 
   .logoWrapper {
-    margin: 0 $gutter__x;
     display: flex;
     align-items: center;
 
@@ -15,6 +18,44 @@
 
       &:hover {
         color: $color__header__hover;
+      }
+    }
+  }
+
+  .barWrapper {
+    display: none;
+  }
+}
+
+@include mobile {
+  .headerWrapper {
+    .logoWrapper {
+      justify-content: center;
+    }
+    .barWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .headerWrapper {
+    .logoWrapper {
+      justify-content: center;
+    }
+    .barWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        cursor: pointer;
       }
     }
   }
