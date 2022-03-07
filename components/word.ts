@@ -16,7 +16,7 @@ interface BADGEPROPS {
 export const BADGE_BRANDS: BADGEPROPS[] = [
   { brand: "CU", key: "cu" },
   { brand: "GS25", key: "gs25" },
-  { brand: "7Eleven", key: "seven" },
+  { brand: "7ELEVEN", key: "seven" },
   { brand: "MINISTOP", key: "ministop" },
   { brand: "EMART", key: "emart" },
 ];
