@@ -14,7 +14,7 @@ const SearchForm = () => {
         </select>
       </div>
       <div className={styles.searchFormFill}>
-        <input type="text" name="Product" placeholder=" " />
+        <input className={styles.test} type="text" name="Product" placeholder=" " />
         <label className={styles.move} htmlFor="Product">Product</label>
       </div>
 
