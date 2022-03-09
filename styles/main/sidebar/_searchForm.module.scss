@@ -40,7 +40,7 @@
 
 .test:not(:placeholder-shown) + label {
   color: #111;
-  transform: scale(0.5, 0.5) translateY(-30px);
+  transform: scale(0.8, 0.8) translateY(-30px);
   transition: all ease-in-out .3s;
 }
 
