@@ -31,8 +31,8 @@
 
 ### Notice
 
-- 1.
+- 1. input에 들어있는 placeholder가 input의 value가 변했을 때 효과를 주고 싶었으나 감이 잡히지 않았음
 
 ### Idea
 
-- 1.
+- 1. 열심히 구글링한 결과 placeholder-shown의 방법을 찾음
