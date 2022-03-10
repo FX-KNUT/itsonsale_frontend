@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../../styles/main/sidebar/_searchForm.module.scss";
+import { SalesOption } from "../../word";
 
 const SearchForm = () => {
   const [sales, setSales] = useState<string>("전체");
@@ -23,9 +24,11 @@ const SearchForm = () => {
     <div className={styles.searchFormWrapper}>
       <div className={styles.searchFormLeft}>
         <select className={styles.sales} onChange={changeSales}>
-          <option value="전체">전체</option>
-          <option value="1+1">1+1</option>
-          <option value="2+1">2+1</option>
+          {
+              SalesOption.map(sales => (
+                <option value={sales.value}>{sales.label}</option>
+              ))
+          }
         </select>
         <p>
           <span>{sales}</span>
