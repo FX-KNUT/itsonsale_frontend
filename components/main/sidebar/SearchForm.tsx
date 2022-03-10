@@ -3,9 +3,22 @@ import styles from "../../../styles/main/sidebar/_searchForm.module.scss";
 
 const SearchForm = () => {
   const [sales, setSales] = useState<string>("전체");
-  const changeSales = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const changeSales = (e) => {
     setSales(e.target.value);
   };
+
+  // input이 들어왔는지 확인
+  const searchInput = document.querySelector(".searchFormFill");
+  const checkInput = () => {
+    const beforeInput = searchInput.value;
+  }
+  //input 이 달라짐에 따라 리로드될 연관 검색어
+  const timer = (beforeInput) => {
+    setTimeout(() => {
+
+      if(searchInput.value === beforeInput)
+    })
+  }
   return (
     <div className={styles.searchFormWrapper}>
       <div className={styles.searchFormLeft}>
@@ -46,17 +59,6 @@ const SearchForm = () => {
   );
 };
 
-// input이 들어왔는지 확인
-const searchInput = document.querySelector(".searchFormFill");
-const checkInput = () => {
-  const beforeInput = searchInput.value;
-}
-//input 이 달라짐에 따라 리로드될 연관 검색어
-const timer = (beforeInput) => {
-  setTimeout(() => {
 
-    if(searchInput.value === beforeInput)
-  })
-}
 
 export default SearchForm;
