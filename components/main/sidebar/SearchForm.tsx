@@ -3,7 +3,7 @@ import styles from "../../../styles/main/sidebar/_searchForm.module.scss";
 
 const SearchForm = () => {
   const [sales, setSales] = useState<string>("전체");
-  const changeSales = (e) => {
+  const changeSales = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSales(e.target.value);
   };
   return (
