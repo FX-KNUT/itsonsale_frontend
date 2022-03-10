@@ -46,5 +46,17 @@ const SearchForm = () => {
   );
 };
 
+// input이 들어왔는지 확인
+const searchInput = document.querySelector(".searchFormFill");
+const checkInput = () => {
+  const beforeInput = searchInput.value;
+}
+//input 이 달라짐에 따라 리로드될 연관 검색어
+const timer = (beforeInput) => {
+  setTimeout(() => {
+
+    if(searchInput.value === beforeInput)
+  })
+}
 
 export default SearchForm;
