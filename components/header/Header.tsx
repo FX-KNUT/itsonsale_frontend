@@ -5,6 +5,8 @@ import Link from "next/link";
 import Dim from "../reusable/Dim";
 import Slide from "../reusable/Slide";
 import { SIDEBAR_CONTENTS } from "../word";
+import Badges from "../main/sidebar/Badges";
+import SearchForm from "../main/sidebar/SearchForm";
 
 const Header = () => {
   // toggle dim
@@ -38,9 +40,12 @@ const Header = () => {
         <Dim setIsShow={setIsShow}>
           <Slide setIsShow={setIsShow}>
             <Fragment>
-              {SIDEBAR_CONTENTS.map((content, idx) => (
+              {/* 에러나는데 나중에 살펴볼 예정 */}
+              {/* {SIDEBAR_CONTENTS.map((content, idx) => (
                 <Fragment key={idx}>{content()}</Fragment>
-              ))}
+              ))} */}
+              <Badges></Badges>
+              <SearchForm></SearchForm>
             </Fragment>
           </Slide>
         </Dim>

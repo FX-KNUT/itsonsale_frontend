@@ -1,5 +1,4 @@
 import React, { Dispatch, Fragment } from "react";
-import { SIDEBAR_CONTENTS } from "../word";
 import styles from "../../styles/reusable/_slide.module.scss";
 
 interface Props {
@@ -19,7 +18,7 @@ const Slide = ({ setIsShow, children }: Props) => {
   };
   return (
     <div className={styles.slideWrapper} onClick={onClickSlide}>
-      <span onClick={onClickCloseBtn}>
+      <span className={styles.closeBtn} onClick={onClickCloseBtn}>
         <i className="fa-solid fa-xmark"></i>
       </span>
       {children}

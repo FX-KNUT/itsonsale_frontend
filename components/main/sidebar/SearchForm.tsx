@@ -8,7 +8,7 @@ const SearchForm = () => {
   };
 
   // input이 들어왔는지 확인
-  const searchInput = document.querySelector(".searchFormFill");
+  /* const searchInput = document.querySelector(".searchFormFill");
   const checkInput = () => {
     const beforeInput = searchInput.value;
   }
@@ -18,14 +18,12 @@ const SearchForm = () => {
 
       if(searchInput.value === beforeInput)
     })
-  }
+  } */
   return (
     <div className={styles.searchFormWrapper}>
       <div className={styles.searchFormLeft}>
         <select className={styles.sales} onChange={changeSales}>
-          <option value="전체">
-            전체
-          </option>
+          <option value="전체">전체</option>
           <option value="1+1">1+1</option>
           <option value="2+1">2+1</option>
         </select>
@@ -58,7 +56,5 @@ const SearchForm = () => {
     </div>
   );
 };
-
-
 
 export default SearchForm;
