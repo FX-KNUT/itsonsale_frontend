@@ -24,11 +24,9 @@ const SearchForm = () => {
     <div className={styles.searchFormWrapper}>
       <div className={styles.searchFormLeft}>
         <select className={styles.sales} onChange={changeSales}>
-          {
-              SalesOption.map(sales => (
-                <option value={sales.value}>{sales.label}</option>
-              ))
-          }
+          {SalesOption.map((sales) => (
+            <option value={sales.value}>{sales.label}</option>
+          ))}
         </select>
         <p>
           <span>{sales}</span>
