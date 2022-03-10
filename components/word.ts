@@ -28,7 +28,7 @@ interface Sales {
   label: string;
 }
 
-export const SalesSort: Sales[] = [
+export const SalesOption: Sales[] = [
   { value: "전체", label: "전체" },
   { value: "1+1", label: "1+1" },
   { value: "2+1", label: "2+1" },
