@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "../../../styles/main/sidebar/_searchForm.module.scss";
 
 const SearchForm = () => {
-  const [sales, setSales] = useState<String>("전체");
+  const [sales, setSales] = useState<string>("전체");
   const changeSales = (e) => {
     setSales(e.target.value);
   };
@@ -10,7 +10,7 @@ const SearchForm = () => {
     <div className={styles.searchFormWrapper}>
       <div className={styles.searchFormLeft}>
         <select className={styles.sales} onChange={changeSales}>
-          <option value="전체" selected>
+          <option value="전체">
             전체
           </option>
           <option value="1+1">1+1</option>
@@ -34,13 +34,13 @@ const SearchForm = () => {
       </div>
 
       <div className={styles.searchFormRight}>
-          <button
-            className={styles.searchSubmitButton}
-            id="search-submit-button"
-            type="submit"
-          ></button>
+        <button
+          className={styles.searchSubmitButton}
+          id="search-submit-button"
+          type="submit"
+        >
           <i className="fa-solid fa-magnifying-glass"></i>
-
+        </button>
       </div>
     </div>
   );
