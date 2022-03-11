@@ -30,19 +30,17 @@ const SearchForm = () => {
             </option>
           ))}
         </select>
-        <p>
-          <span>{sales}</span>
-          <i className="fa-solid fa-sort-down"></i>
-        </p>
+        <span>{sales}</span>
+        <i className="fa-solid fa-sort-down"></i>
       </div>
       <div className={styles.searchFormFill}>
         <input
-          className={styles.test}
+          className={styles.searchField}
           type="text"
           name="Product"
           placeholder=" "
         />
-        <label className={styles.move} htmlFor="Product">
+        <label className={styles.searchPlaceholder} htmlFor="Product">
           Product
         </label>
       </div>
