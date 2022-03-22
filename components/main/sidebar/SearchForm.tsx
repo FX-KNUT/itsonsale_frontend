@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../../styles/main/sidebar/_searchForm.module.scss";
-import { SalesOption } from "../../word";
+import { SalesOption } from "../../constant";
 
 const SearchForm = () => {
   const [sales, setSales] = useState<string>("전체");

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../../styles/reusable/_product.module.scss";
-import { WON } from "../word";
+import { WON } from "../constant";
 
 // Props는 Product에 들어갈 props에 대한 자료형을 나타냅니다.
 interface Props {

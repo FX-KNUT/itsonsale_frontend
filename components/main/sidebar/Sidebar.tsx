@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import styles from "../../../styles/main/sidebar/_sidebar.module.scss";
-import { SIDEBAR_CONTENTS } from "../../word";
+import { SIDEBAR_CONTENTS } from "../../constant";
 
 const Sidebar = () => {
   return (

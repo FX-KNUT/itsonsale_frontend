@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { LOGO } from "../word";
+import { LOGO } from "../constant";
 import styles from "../../styles/header/_header.module.scss";
 import Link from "next/link";
 import Dim from "../reusable/Dim";
 import Slide from "../reusable/Slide";
-import { SIDEBAR_CONTENTS } from "../word";
+import { SIDEBAR_CONTENTS } from "../constant";
 import Badges from "../main/sidebar/Badges";
 import SearchForm from "../main/sidebar/SearchForm";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Badge from "../../reusable/Badge";
 import styles from "../../../styles/main/sidebar/_badges.module.scss";
-import { BADGE_BRANDS } from "../../word";
+import { BADGE_BRANDS } from "../../constant";
 
 const Badges = () => {
   return (
