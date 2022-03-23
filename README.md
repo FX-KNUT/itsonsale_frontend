@@ -13,6 +13,14 @@
 - 3. Nav의 Brand Badge를 눌러 해당 Brand 상품들 보여주기
 - 4. Desktop, Tablet, Mobile에 맞는 화면 구현하기
 - 5. 한 화면으로 구현하기 (Section에만 Scroll 부여)
+- 6. Side bar 검색창을 header로 이동(toggle 형식)
+     (awesomefont로 아이콘 불러오고 해당 아이콘 클릭 시 toggle)
+- 7. Body에 행사 상품이 보이도록 움직이는 배너 넣기
+- 8. 상품 클릭 시 modal창 생성 (자세한 이미지는 Github issue 확인)
+- 9. 브랜드 뱃지 색상을 본래 브랜드 색상과 더욱 유사하게 바꾸기
+- 10. 브랜드 뱃지 사이즈를 모두 동일 하게 맞추기
+- 11. 상품 Border를 브랜드 색상 컬러로 지정하기
+
 
 ### Device
 
