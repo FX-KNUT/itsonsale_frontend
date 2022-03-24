@@ -3,6 +3,21 @@
 /* header에서 사용할 단어 */
 export const LOGO = `It's on Sale!`;
 export const NAVI_CONTENTS = ["CU", "GS25", "EMART24", "7ELEVEN", "MINISTOP"];
+export const SELECT_BRAND_CONTENTS = [
+  { value: "", brand: "브랜드" },
+  { value: "cu", brand: "CU" },
+  { value: "gs25", brand: "GS25" },
+  { value: "emart24", brand: "EMART24" },
+  { value: "7eleven", brand: "7ELEVEN" },
+  { value: "ministop", brand: "MINISTOP" },
+];
+export const SELECT_EVENT_CONTENTS = [
+  { value: "", event: "행사종류" },
+  { value: "1+1", event: "1+1" },
+  { value: "2+1", event: "2+1" },
+  { value: "add", event: "덤증정" },
+  { value: "dc", event: "가격할인" },
+];
 
 /* Badge Brand */
 interface BADGEPROPS {

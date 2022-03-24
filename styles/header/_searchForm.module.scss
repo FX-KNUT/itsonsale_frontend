@@ -3,10 +3,11 @@
 .searchFormWrapper {
   background-color: $bg__header;
   opacity: 0.9;
-  color: $color__header;
+  padding: $gutter__y 8rem;
+
   display: flex;
   align-items: center;
-  padding: $gutter__y $gutter__x;
+  gap: 15px;
 
   .selectBrand {
     flex: 1;
@@ -17,14 +18,32 @@
     flex: 1;
   }
 
+  .selectBrand,
+  .selectEvent {
+    select {
+      padding: 8px 14px;
+      width: 100%;
+    }
+  }
+
   .inputName {
     flex: 1.5;
+    display: flex;
+    align-items: center;
     position: relative;
+
+    input {
+      padding: 8px 14px;
+      width: 100%;
+    }
 
     .searchBtn {
       position: absolute;
-      top: 0;
+      border: none;
+      background-color: transparent;
       right: 0;
+      padding: 8px;
+      cursor: pointer;
     }
   }
 }
