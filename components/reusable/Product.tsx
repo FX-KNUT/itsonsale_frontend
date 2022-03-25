@@ -15,7 +15,6 @@ interface Props {
 const Product = ({ brand, event, img, name, price }: Props) => {
   // cn(className)
   // cn으로 css를 조절합니다
-  const event_cn = event === "1+1" ? "event_opo" : "event_tpo";
   let brand_cn: string = "";
   switch (brand) {
     case "CU":
@@ -36,20 +35,28 @@ const Product = ({ brand, event, img, name, price }: Props) => {
   }
 
   return (
-    <div className={`${styles.productWrapper} ${styles[brand_cn]}`}>
-      <div className={styles.productHeader}>
+    <div className={`${styles.productContainer} ${styles[brand_cn]}`}>
+      <div className={styles.absoluteEvent}>
         <span className={styles.event}>{event}</span>
       </div>
-      <div className={styles.productContent}>
-        <div className={styles.Img}>
-          <Image alt={name} width={200} height={200} src={img}></Image>
-        </div>
-        <div className={styles.introduceWrapper}>
-          <span className={styles.name}>{name}</span>
-          <span className={styles.price}>
-            {price}
-            {WON}
-          </span>
+      <div className={styles.productWrapper}>
+        <div className={styles.productContent}>
+          <div className={styles.imgWrapper}>
+            <Image
+              alt={name}
+              src={img}
+              layout="intrinsic"
+              width={200}
+              height={190}
+            ></Image>
+          </div>
+          <div className={styles.productInfo}>
+            <span className={styles.name}>{name}</span>
+            <span className={styles.price}>
+              {price}
+              {WON}
+            </span>
+          </div>
         </div>
       </div>
     </div>

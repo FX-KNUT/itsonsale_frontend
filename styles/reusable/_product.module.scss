@@ -1,54 +1,53 @@
 @import "../varibale.module.scss";
 
-.productWrapper {
+.productContainer {
   width: 224px;
-  border: 2px solid transparent;
-  border-radius: 16px;
-  padding: $gutter__card;
+  height: 254px;
+  border-radius: 1rem;
   position: relative;
-  background-color: $bg__product;
+  padding: 2px; // border-width
+  transition: all 0.5s;
   cursor: pointer;
 
+  border-color: 3px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
   &.cu {
-    padding: 5px;
-    background-clip: padding-box;
     background-image: linear-gradient(#fff, #fff),
       linear-gradient(45deg, $color__cu 0%, $bg__cu 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    // border-color: $color__cu;
   }
 
   &.gs {
-    border-color: $color__gs;
-  }
-
-  &.seven {
-    border-color: $color__seven;
-  }
-
-  &.mini {
-    border-color: $color__mini;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__gs 0%, $bg__gs 100%);
   }
 
   &.emart {
-    border-color: $color__emart;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__emart 0%, $bg__emart 100%);
+  }
+
+  &.seven {
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__seven 0%, $bg__seven 100%);
+  }
+
+  &.mini {
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__mini 0%, $bg__mini 100%);
   }
 
   &:hover {
-    border-width: 4px;
+    padding: 6px;
+    transition: all 0.5s;
   }
 
-  .productHeader {
+  .absoluteEvent {
     position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    display: flex;
-    justify-content: flex-end;
+    top: 1rem;
+    right: 1rem;
     z-index: 1;
-    border-radius: 6px;
 
     .event {
       border-radius: $product_border_radius;
@@ -59,33 +58,47 @@
       background-color: lightcoral;
     }
   }
-  .Img {
-    border-radius: 6px;
-  }
-  .productContent {
-    display: flex;
-    flex-direction: column;
 
-    .introduceWrapper {
+  .productWrapper {
+    background-color: $bg__product;
+    border-radius: 1rem;
+    width: 100%;
+
+    .productContent {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      font-size: 1.125rem;
+      width: 100%;
 
-      .name {
-        width: 100%;
-        font-weight: 500;
-        margin-bottom: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+      .imgWrapper {
+        flex: 1;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
       }
 
-      .price {
-        font-weight: 700;
+      .productInfo {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        font-size: 1.125rem;
+
+        .name {
+          font-weight: 500;
+          margin-bottom: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .price {
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+        }
       }
     }
   }
