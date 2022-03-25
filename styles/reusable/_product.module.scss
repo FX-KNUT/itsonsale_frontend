@@ -2,7 +2,7 @@
 
 .productWrapper {
   width: 224px;
-  border: 2px solid;
+  border: 2px solid transparent;
   border-radius: 16px;
   padding: $gutter__card;
   position: relative;
@@ -10,7 +10,13 @@
   cursor: pointer;
 
   &.cu {
-    border-color: $color__cu;
+    padding: 5px;
+    background-clip: padding-box;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, $color__cu 0%, $bg__cu 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    // border-color: $color__cu;
   }
 
   &.gs {
@@ -42,6 +48,7 @@
     display: flex;
     justify-content: flex-end;
     z-index: 1;
+    border-radius: 6px;
 
     .event {
       border-radius: $product_border_radius;
@@ -52,7 +59,9 @@
       background-color: lightcoral;
     }
   }
-
+  .Img {
+    border-radius: 6px;
+  }
   .productContent {
     display: flex;
     flex-direction: column;

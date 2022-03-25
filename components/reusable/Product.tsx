@@ -41,7 +41,9 @@ const Product = ({ brand, event, img, name, price }: Props) => {
         <span className={styles.event}>{event}</span>
       </div>
       <div className={styles.productContent}>
-        <Image alt={name} width={200} height={200} src={img}></Image>
+        <div className={styles.Img}>
+          <Image alt={name} width={200} height={200} src={img}></Image>
+        </div>
         <div className={styles.introduceWrapper}>
           <span className={styles.name}>{name}</span>
           <span className={styles.price}>
