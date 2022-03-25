@@ -36,7 +36,10 @@ const Product = ({ brand, event, img, name, price }: Props) => {
   }
 
   return (
-    <div className={styles.productWrapper}>
+    <div className={`${styles.productWrapper} ${styles[brand_cn]}`}>
+      <div className={styles.productHeader}>
+        <span className={styles.event}>{event}</span>
+      </div>
       <div className={styles.productContent}>
         <Image alt={name} width={200} height={200} src={img}></Image>
         <div className={styles.introduceWrapper}>
@@ -46,10 +49,6 @@ const Product = ({ brand, event, img, name, price }: Props) => {
             {WON}
           </span>
         </div>
-      </div>
-      <div className={styles.productHeader}>
-        <span className={`${styles.brand} ${styles[brand_cn]}`}>{brand}</span>
-        <span className={`${styles.event} ${styles[event_cn]}`}>{event}</span>
       </div>
     </div>
   );

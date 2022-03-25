@@ -2,51 +2,46 @@
 
 .productWrapper {
   width: 224px;
-  border: 1px solid $product_border_color;
+  border: 2px solid;
   border-radius: 16px;
   padding: $gutter__card;
   position: relative;
   background-color: $bg__product;
+  cursor: pointer;
+
+  &.cu {
+    border-color: $color__cu;
+  }
+
+  &.gs {
+    border-color: $color__gs;
+  }
+
+  &.seven {
+    border-color: $color__seven;
+  }
+
+  &.mini {
+    border-color: $color__mini;
+  }
+
+  &.emart {
+    border-color: $color__emart;
+  }
+
+  &:hover {
+    border-width: 4px;
+  }
 
   .productHeader {
     position: absolute;
     width: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
-
-    .brand {
-      border-radius: $product_border_radius;
-      color: $color__event;
-      font-weight: 600;
-      font-size: 14px;
-      padding: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &.cu {
-        background-color: $bg__cu;
-      }
-
-      &.gs {
-        background-color: $bg__gs;
-      }
-
-      &.seven {
-        background-color: $bg__seven;
-      }
-
-      &.mini {
-        background-color: $bg__mini;
-      }
-
-      &.emart {
-        background-color: $bg__mini;
-      }
-    }
+    justify-content: flex-end;
+    z-index: 1;
 
     .event {
       border-radius: $product_border_radius;
@@ -54,14 +49,7 @@
       font-weight: 600;
       font-size: 14px;
       padding: 8px;
-
-      &.event_opo {
-        background-color: $bg__event__opo;
-      }
-
-      &.event_tpo {
-        background-color: $bg__event__tpo;
-      }
+      background-color: lightcoral;
     }
   }
 
