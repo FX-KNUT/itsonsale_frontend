@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import fetch from "../../components/main/section/fetch";
 import FetchMore from "../../components/main/section/FetchMore";
 import ProductList from "../../components/main/section/ProductList";
+import Skeleton from "../../components/reusable/Skeleton";
 import styles from "../../styles/main/section/_brandProductList.module.scss";
 
 interface ListProps {
@@ -13,7 +14,6 @@ interface ListProps {
   price: number;
 }
 
-// BrandBadge를 눌렀을 때 이 부분이 실행됨.
 const BrandProductList = () => {
   // const [page, setPage] = useState<number>(0);
   // const [list, setList] = useState<ListProps[]>([]);
@@ -74,6 +74,7 @@ const BrandProductList = () => {
     <section className={styles.productListWrapper}>
       <span>{query}</span>
       <ProductList list={list} />
+      <Skeleton />
       {/* <FetchMore loading={page != 0 && loading} setPage={setPage} /> */}
     </section>
   );
