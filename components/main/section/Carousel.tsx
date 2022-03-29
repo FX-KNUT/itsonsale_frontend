@@ -1,7 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect} from "react";
 import styles from "../../../styles/reusable/_carousel.module.scss";
 
-const Carousel = ({ data }: Array) => {
+interface ImageData{
+  data: []
+  image: string
+  key: string
+}
+
+const Carousel = ({ data }: ImageData) => {
   const [current, setCurrent] = useState(0);
   const length = data.length;
 
@@ -28,17 +34,19 @@ const Carousel = ({ data }: Array) => {
         <i className="fa-solid fa-chevron-left"></i>
       </p>
 
-      {data.map((file: Array, idx: number) => {
+      {data.map((file: ImageData, idx : number) => {
         return (
           <div className={idx === current ? "slide active" : "slide"} key={idx}>
-            {idx === current && (
-              <img
-                src={file.image}
-                key={file.key}
-                className={styles.image}
-                alt="market"
-              />
-            )}
+            <div className={styles.sliding}>
+              {idx === current && (
+                <img
+                  src={file.image}
+                  key={file.key}
+                  className={styles.image}
+                  alt="market"
+                />
+              )}
+            </div>
           </div>
         );
       })}

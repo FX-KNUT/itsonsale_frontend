@@ -1,24 +1,28 @@
 .slider {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.image{
-    width: 400px;
-    height: 300px;
-    border-radius: 50px;
+.image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50px;
 }
 
-.ArrowLeft{
-    position: relative;
-    font-size: 3rem;
-
+.sliding {
+  display: flex;
+  overflow: hidden;
 }
 
-.ArrowRight{
-    position: relative;
-    font-size: 3rem;
+.ArrowLeft {
+  position: relative;
+  font-size: 3rem;
+}
+
+.ArrowRight {
+  position: relative;
+  font-size: 3rem;
 }
