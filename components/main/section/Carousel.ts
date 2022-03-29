@@ -6,9 +6,7 @@ const Carousel = ({ data }: Array) => {
   const [count, setCount] = useState(0);
   const loopRef = useRef(null);
   const length = data.length;
-  if (!Array.isArray(data) || length <= 0) {
-    return null;
-  }
+  
 
   
   useEffect(() => {
