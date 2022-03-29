@@ -8,6 +8,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 $gutter__x;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 
   .logoWrapper {
     display: flex;

@@ -1,11 +1,10 @@
 import React, { Dispatch, useEffect, useRef } from "react";
 
 interface Props {
-  loading: boolean;
   setPage: Dispatch<React.SetStateAction<number>>;
 }
 
-const FetchMore = ({ loading, setPage }: Props) => {
+const FetchMore = ({ setPage }: Props) => {
   // useRef는 document.querySelector라고 보면 됨.
   const fetchMoreTrigger = useRef(null);
 

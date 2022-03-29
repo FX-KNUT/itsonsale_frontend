@@ -22,7 +22,7 @@ const Header = () => {
         {/* 여러분들이 더 있었으면 하는 nav를 추가해주세요! */}
         <nav className={styles.nav}>
           {NAVI_CONTENTS.map((content, idx) => (
-            <Link href={`/brands/${content}`} key={idx}>
+            <Link href="/brands/[brand]" as={`/brands/${content}`} key={idx}>
               <a>
                 <span key={idx}>{content}</span>
               </a>
