@@ -1,28 +1,26 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "../../../styles/reusable/_carousel.module.scss";
 
-//타입 기록 뭘로 해야될 지 모르겠당
 const Carousel = ({ data }: Array) => {
-  const [count, setCount] = useState(0);
-  const loopRef = useRef(null);
+  const [current, setCurrent] = useState(0);
   const length = data.length;
-  
 
-  
   useEffect(() => {
     const timer = setInterval(() => {
-      setCount((count) => count + 1);
-    }, 2000);
+      if (current >= length - 1) {
+        setCurrent((count) => 0);
+      } else {
+        setCurrent((count) => count + 1);
+      }
+    }, 3000);
     return () => clearInterval(timer);
-  }, [count]);
+  }, [current]);
 
   const prevSlide = () => {
-    setCount(count <= length - 1 ? length-1 : count - 1);
-    console.log("click count", count);
+    setCurrent(current <= 0 ? length - 1 : current - 1);
   };
   const nextSlide = () => {
-    setCount(count >= length - 1 ? 0 : count + 1);
-    console.log("click count", count);
+    setCurrent(current >= length - 1 ? 0 : current + 1);
   };
   return (
     <section className={styles.slider}>
@@ -30,10 +28,10 @@ const Carousel = ({ data }: Array) => {
         <i className="fa-solid fa-chevron-left"></i>
       </p>
 
-      {data.map((file, idx) => {
+      {data.map((file: Array, idx: number) => {
         return (
-          <div className={idx === count ? "slide active" : "slide"} key={idx}>
-            {idx === count && (
+          <div className={idx === current ? "slide active" : "slide"} key={idx}>
+            {idx === current && (
               <img
                 src={file.image}
                 key={file.key}
