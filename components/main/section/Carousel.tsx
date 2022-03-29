@@ -1,10 +1,13 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../../styles/reusable/_carousel.module.scss";
 
-interface ImageData{
-  data: []
-  image: string
-  key: string
+interface ImageData {
+  data: any;
+}
+
+interface SVGImageElement{
+  image: string;
+  key: string;
 }
 
 const Carousel = ({ data }: ImageData) => {
@@ -34,19 +37,22 @@ const Carousel = ({ data }: ImageData) => {
         <i className="fa-solid fa-chevron-left"></i>
       </p>
 
-      {data.map((file: ImageData, idx : number) => {
+      {data.map((file: SVGImageElement, idx: number) => {
         return (
-          <div className={idx === current ? "slide active" : "slide"} key={idx}>
-            <div className={styles.sliding}>
-              {idx === current && (
-                <img
-                  src={file.image}
-                  key={file.key}
-                  className={styles.image}
-                  alt="market"
-                />
-              )}
-            </div>
+          <div
+            className={
+              idx === current ? `${styles.slide_active}` : `${styles.slide}`
+            }
+            key={idx}
+          >
+            {idx === current && (
+              <img
+                src={file.image}
+                key={file.key}
+                className={styles.image}
+                alt="market"
+              />
+            )}
           </div>
         );
       })}
