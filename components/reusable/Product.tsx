@@ -1,7 +1,8 @@
 import Image from "next/image";
-import React from "react";
+import React, { Fragment } from "react";
 import styles from "../../styles/reusable/_product.module.scss";
 import { WON } from "../constant";
+import Modal from "./modal";
 
 // Props는 Product에 들어갈 props에 대한 자료형을 나타냅니다.
 interface Props {
@@ -35,31 +36,40 @@ const Product = ({ brand, event, img, name, price }: Props) => {
   }
 
   return (
-    <div className={`${styles.productContainer} ${styles[brand_cn]}`}>
-      <div className={styles.absoluteEvent}>
-        <span className={styles.event}>{event}</span>
-      </div>
-      <div className={styles.productWrapper}>
-        <div className={styles.productContent}>
-          <div className={styles.imgWrapper}>
-            <Image
-              alt={name}
-              src={img}
-              layout="intrinsic"
-              width={200}
-              height={190}
-            ></Image>
-          </div>
-          <div className={styles.productInfo}>
-            <span className={styles.name}>{name}</span>
-            <span className={styles.price}>
-              {price}
-              {WON}
-            </span>
+    <Fragment>
+      <div className={`${styles.productContainer} ${styles[brand_cn]}`}>
+        <div className={styles.absoluteEvent}>
+          <span className={styles.event}>{event}</span>
+        </div>
+        <div className={styles.productWrapper}>
+          <div className={styles.productContent}>
+            <div className={styles.imgWrapper}>
+              <Image
+                alt={name}
+                src={img}
+                layout="intrinsic"
+                width={200}
+                height={190}
+              ></Image>
+            </div>
+            <div className={styles.productInfo}>
+              <span className={styles.name}>{name}</span>
+              <span className={styles.price}>
+                {price}
+                {WON}
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <Modal
+        brand={brand}
+        event={event}
+        img={img}
+        name={name}
+        price={price}
+      ></Modal>
+    </Fragment>
   );
 };
 
