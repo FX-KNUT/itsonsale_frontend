@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { Fragment } from "react";
 import styles from "../../styles/reusable/_product.module.scss";
 import { WON } from "../constant";
-import Modal from "./modal";
+import Modal from "./Modal";
 
 // Props는 Product에 들어갈 props에 대한 자료형을 나타냅니다.
 interface Props {
