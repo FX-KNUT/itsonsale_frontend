@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../styles/main/section/_section.module.scss";
-import { CarouselData } from "../../reusable/Carousel_Data";
+import { CarouselData } from "../../constant";
 import Carousel from "./Carousel";
 
 const Section = () => {

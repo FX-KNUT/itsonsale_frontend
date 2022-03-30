@@ -17,7 +17,7 @@ const Carousel = ({ data }: ImageData) => {
   useEffect(() => {
     const timer = setInterval(() => {
       if (current >= length - 1) {
-        setCurrent((count) => 0);
+        setCurrent((count) => count = 0);
       } else {
         setCurrent((count) => count + 1);
       }
