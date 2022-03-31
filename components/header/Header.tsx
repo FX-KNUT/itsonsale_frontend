@@ -9,8 +9,8 @@ const DROPDOWN = <i className="fa-solid fa-caret-down"></i>;
 const Header = () => {
   const [isShow, setIsShow] = useState<boolean>(false);
   return (
-    <>
-      <header className={styles.headerWrapper}>
+    <header className={styles.headerContainer}>
+      <div className={styles.headerWrapper}>
         <div className={styles.logoWrapper}>
           {/* NextJS는 경로간의 이동을 위해 Link 컴포넌트를 제공합니다. react-router-dom 안써도 됩니다. */}
           <Link href="/">
@@ -35,9 +35,9 @@ const Header = () => {
         >
           {DROPDOWN}
         </div>
-      </header>
+      </div>
       {isShow && <SearchForm></SearchForm>}
-    </>
+    </header>
   );
 };
 

@@ -1,8 +1,7 @@
 @import "../varibale.module.scss";
 
 .searchFormWrapper {
-  background-color: $bg__header;
-  opacity: 0.9;
+  background-color: $bg__header__search;
   padding: $gutter__y 8rem;
 
   display: flex;
