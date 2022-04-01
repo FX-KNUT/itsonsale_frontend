@@ -5,7 +5,7 @@ interface ImageData {
   data: any;
 }
 
-interface SVGImageElement{
+interface SVGImageElement {
   image: string;
   key: string;
 }
