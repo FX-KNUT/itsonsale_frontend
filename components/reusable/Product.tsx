@@ -15,13 +15,11 @@ interface Props {
 
 const Product = ({ brand, event, img, name, price }: Props) => {
   const [showModal, setIsShowModal] = useState(false);
-  // const classname = document.getElementById("productWrapper");
 
-  // const onProductClicked = () => {
-  //   console.log("상품 클릭");
-  //   if (classname === "productWrapper") {
-  //     setIsShowModal(true);
-  //   }
+  const onProductClicked = () => {
+    console.log("상품 클릭");
+    setIsShowModal((prev) => !prev);
+    console.log(showModal);
   };
   // cn(className)
   // cn으로 css를 조절합니다
@@ -51,8 +49,7 @@ const Product = ({ brand, event, img, name, price }: Props) => {
           <span className={styles.event}>{event}</span>
         </div>
         <div className={styles.productWrapper}>
-          <span onClick={() => onProductClicked()} />
-          <div className={styles.productContent}>
+          <div className={styles.productContent} onClick={onProductClicked}>
             <div className={styles.imgWrapper}>
               <Image
                 alt={name}
@@ -72,14 +69,15 @@ const Product = ({ brand, event, img, name, price }: Props) => {
           </div>
         </div>
       </div>
-      <Modal
-        brand={brand}
-        event={event}
-        img={img}
-        name={name}
-        price={price}
-        state={showModal}
-      ></Modal>
+      {showModal && (
+        <Modal
+          brand={brand}
+          event={event}
+          img={img}
+          name={name}
+          price={price}
+        ></Modal>
+      )}
     </Fragment>
   );
 };
