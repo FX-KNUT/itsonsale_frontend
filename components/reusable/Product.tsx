@@ -80,6 +80,6 @@ const Product = ({ brand, event, img, name, price }: Props) => {
       )}
     </Fragment>
   );
-};
+  };
 
 export default Product;
