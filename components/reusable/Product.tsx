@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import styles from "../../styles/reusable/_product.module.scss";
 import { WON } from "../constant";
 import Modal from "./Modal";
@@ -14,6 +14,15 @@ interface Props {
 }
 
 const Product = ({ brand, event, img, name, price }: Props) => {
+  const [showModal, setIsShowModal] = useState(false);
+  // const classname = document.getElementById("productWrapper");
+
+  // const onProductClicked = () => {
+  //   console.log("상품 클릭");
+  //   if (classname === "productWrapper") {
+  //     setIsShowModal(true);
+  //   }
+  };
   // cn(className)
   // cn으로 css를 조절합니다
   let brand_cn: string = "";
@@ -42,6 +51,7 @@ const Product = ({ brand, event, img, name, price }: Props) => {
           <span className={styles.event}>{event}</span>
         </div>
         <div className={styles.productWrapper}>
+          <span onClick={() => onProductClicked()} />
           <div className={styles.productContent}>
             <div className={styles.imgWrapper}>
               <Image
@@ -68,6 +78,7 @@ const Product = ({ brand, event, img, name, price }: Props) => {
         img={img}
         name={name}
         price={price}
+        state={showModal}
       ></Modal>
     </Fragment>
   );
